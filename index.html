@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>React Simple Start</title>
 </head>
-
 <body>
-    <div id="app"></div>
+<div id="app"></div>
 
-    <script src="node_modules/react/dist/react.min.js"></script>
-    <script src="node_modules/react-dom/dist/react-dom.min.js"></script>
-    <!-- babel-standalone is a standalone build of Babel for use in
-        non-Node.js environments, including browsers. -->
-    <script src="node_modules/babel-standalone/babel.js"></script>
+<script src="node_modules/react/dist/react.js"></script>
+<script src="node_modules/react-dom/dist/react-dom.js"></script>
+<!-- babel-standalone is a standalone build of Babel for use in
+non-Node.js environments, including browsers. -->
+<script src="node_modules/babel-standalone/babel.js"></script>
 
-    <script type="text/babel">
-        var Greeting = React.createClass({
-            render: function(){
-                return(
-                    <h1>Opaaa</h1>
-                )
-            }
-        });
+<script type="text/babel">
+    var Greeting = React.createClass({
+        getInitialState: function () {
+            return {message: 'Hello from Greeting!'};
+        },
+        render: function () {
+            return (
+                    <div>
+                        <h1>{this.state.message}</h1>
 
-        ReactDOM.render(<Greeting />, document.getElementById('app'));
-    </script>
-
+                        <h4>Neki</h4>
+                        <input type="button" value="Olaa"/>
+                    </div>
+            )
+        }
+    });
+    ReactDOM.render(<Greeting/>, document.getElementById('app'));
+</script>
 </body>
-
 </html>
