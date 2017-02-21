@@ -1,0 +1,18 @@
+{
+  "name": "react-simple-start",
+  "version": "1.0.0",
+  "description": "React boilerplate for very simple react app with loading in browser enabled.",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-standalone": "^6.23.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adnan Mulalic",
+  "license": "ISC"
+}
