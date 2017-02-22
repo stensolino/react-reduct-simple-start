@@ -8,28 +8,7 @@
 
 <script src="node_modules/react/dist/react.js"></script>
 <script src="node_modules/react-dom/dist/react-dom.js"></script>
-<!-- babel-standalone is a standalone build of Babel for use in
-non-Node.js environments, including browsers. -->
-<script src="node_modules/babel-standalone/babel.js"></script>
 
-<script type="text/babel">
-    var Greeting = React.createClass({
-        getInitialState: function () {
-            return {message: 'Hello from Greeting!'};
-        },
-        clickMe: function () {
-            this.setState({message: this.state.message + ' :) '})
-        },
-        render: function () {
-            return (
-                    <div>
-                        <h1>{this.state.message}</h1>
-                        <input type="button" onClick={this.clickMe} value="Click Me"/>
-                    </div>
-            )
-        }
-    });
-    ReactDOM.render(<Greeting/>, document.getElementById('app'));
-</script>
+<script src="build/bundle.js"></script>
 </body>
 </html>

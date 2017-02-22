@@ -19,6 +19,7 @@
     "webpack": "^2.2.1"
   },
   "scripts": {
+    "build": "webpack --debug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adnan Mulalic",
