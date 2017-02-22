@@ -17,13 +17,14 @@ non-Node.js environments, including browsers. -->
         getInitialState: function () {
             return {message: 'Hello from Greeting!'};
         },
+        clickMe: function () {
+            this.setState({message: this.state.message + ' :) '})
+        },
         render: function () {
             return (
                     <div>
                         <h1>{this.state.message}</h1>
-
-                        <h4>Neki</h4>
-                        <input type="button" value="Olaa"/>
+                        <input type="button" onClick={this.clickMe} value="Click Me"/>
                     </div>
             )
         }
