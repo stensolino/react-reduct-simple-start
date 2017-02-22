@@ -5,7 +5,7 @@ const ProductList = (props) => {
         <div>
             <ul>
                 {props.products.map(product => (
-                    <li key={product.id}>{product.name}</li>
+                    <li key={product.get('id')}>{product.get('name')}</li>
                 ))}
             </ul>
         </div>
