@@ -1,7 +1,7 @@
 {
-  "name": "react-simple-start",
+  "name": "react-redux-simple-start",
   "version": "1.0.0",
-  "description": "React boilerplate for very simple react app with loading in browser enabled.",
+  "description": "React with redux boilerplate for very simple app.",
   "main": "index.js",
   "dependencies": {
     "react": "^15.4.2",
