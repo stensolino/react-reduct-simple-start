@@ -1,6 +1,9 @@
 import React from 'react';
 
-const ProductList = (props) => {
+const ProductsList = (props) => {
+    const clickMe = function () {
+        props.addProduct('nOVI :)');
+    };
     return (
         <div>
             <ul>
@@ -8,8 +11,10 @@ const ProductList = (props) => {
                     <li key={product.get('id')}>{product.get('name')}</li>
                 ))}
             </ul>
+            <hr/>
+            <input type="button" onClick={clickMe} value="Click Me"/>
         </div>
     );
 };
 
-export default ProductList;
+export default ProductsList;
